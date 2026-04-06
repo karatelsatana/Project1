@@ -16,6 +16,9 @@ def home():
 
 @app.post("/upload")
 def upload_file(file: UploadFile = File(...)):
+
+    if file.filename.endswith(".exe"):
+        return {"error": ".exe is not allowed"}
     
     file_path = os.path.join(UPLOAD_FOLDER, file.filename)
     
