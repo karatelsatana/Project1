@@ -1,9 +1,6 @@
-# File API
+# Проект
 
-## Features
-- Upload file
-- List files
-- Delete file
-
-## Run
-uvicorn main:app --reload
+Это проект для загрузки и проверки файлов. Он умеет:
+- Проверять типы файлов
+- Загружать файлы на сервер
+- Удалять файлы из списка
